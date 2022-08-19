@@ -1,7 +1,4 @@
 :root {
-  background-color: #ffffff;
-  --background-secodary-cl: #2f303a;
-
   /* Fonts */
   --main-font: Roboto, sans-serif;
   --secondary-font: Raleway, sans-serif;
@@ -13,7 +10,9 @@
   --light-txt-color: #ffffff;
 
   /* Background */
-
+  background-color: #ffffff;
+  --background-secodary-cl: #2f303a;
+  --background-elements: #f5f4fa;
   /* Other */
 }
 
@@ -80,7 +79,7 @@
   font-weight: 900;
   font-size: 44px;
   line-height: 60px;
-  line-height: var(60 / 44);
+  line-height: calc(60 / 44);
   /* or 136% */
 
   text-align: center;
@@ -106,18 +105,19 @@
 .section-special .section-title {
   font-weight: 700;
   font-size: 14px;
-  line-height: var(16 / 14);
+  line-height: calc(16 / 14);
   /* letter-spacing: 0.03em; */
   text-transform: uppercase;
   color: var(--main-headers-color);
 }
 
-/* чим займаємось */
+/* чим займаємось, команда - заголовки */
 .section-team .section-title,
 .section-what .section-title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
+  /* line-height: 42px; */
+  line-height: calc(42 / 36);
   text-align: center;
   /* letter-spacing: 0.03em; */
 
@@ -163,4 +163,51 @@
 .footer .link:hover,
 .footer .link:focus {
   color: var(--main-accent-color);
+}
+
+/* Портфоліо */
+.list-rbtn {
+  list-style: none;
+}
+
+.rbtn {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  /* line-height: 26px; */
+  line-height: calc(26 / 16);
+
+  background-color: var(--background-elements);
+
+  border-radius: 4px;
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  border-left: none;
+}
+
+.rbtn:active {
+  background-color: var(--main-accent-color);
+  color: var(--light-txt-color);
+}
+
+.list-progects {
+  list-style: none;
+}
+
+.list-progects .list-item {
+  font-size: 16px;
+  /* line-height: 30px; */
+  line-height: calc(30 / 16);
+}
+
+.project-name {
+  font-weight: 500;
+  font-size: 18px;
+  /* line-height: 36px; */
+  line-height: calc(36 / 18);
+
+  text-align: left;
+  /* letter-spacing: 0.03em; */
+  color: var(--main-headers-color);
 }
