@@ -5,25 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <!-- Шрифти -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Стилі -->
+    <link rel="stylesheet" href="./CSS/styles.css" />
   </head>
   <body class="page">
     <!--шапка ("верхня лінія" у макеті)-->
     <header class="header">
       <nav class="nav">
-        <a class="logo" href="./index.html">
-          <span class="logo-first-word">Web</span>
-          Studio
-        </a>
-
+        <a class="logo" href="./index.html"> <span class="logo-first-word">Web</span>Studio</a>
         <ul class="list">
           <li class="list-item">
-            <a class="link" href="./index.html">Студія</a>
+            <a class="link current" href="./index.html">Студія</a>
           </li>
           <li class="list-item">
-            <!--незрозуміло куди посилатись, інформаціі про портфоліо нема. Якір тут поставив тимчасово-->
-            <a class="link" href="#portfolio">Портфоліо</a>
+            <a class="link" href="./portfilio.html">Портфоліо</a>
           </li>
           <li class="list-item">
+            <!-- тимчасовий якір -->
             <a class="link" href="#contacts">Контакти</a>
           </li>
         </ul>
@@ -41,13 +46,13 @@
 
     <main>
       <!--секція "герой" (у макеті ім'я "шапка")-->
-      <section class="section">
-        <h1 class="main-title">Ефективні рішення для вашого бізнесу</h1>
+      <section class="hero">
+        <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
         <button class="btn" type="button">Замовити послугу</button>
       </section>
 
       <!--секція "особливості команди DevStudio" -->
-      <section class="section">
+      <section class="section-special">
         <h2 hidden>Прихований заголовок</h2>
         <ul class="list">
           <li class="list-item">
@@ -75,7 +80,7 @@
         </ul>
       </section>
       <!--секція "чим ми займаємося"-->
-      <section class="section" id="portfolio">
+      <section class="section-what">
         <h2 class="section-title">Чим ми займаємося</h2>
         <ul class="list">
           <li class="list-item">
@@ -111,7 +116,7 @@
         </ul>
       </section>
       <!--секція "наша команда"-->
-      <section class="section">
+      <section class="section-team">
         <h2 class="section-title">Наша команда</h2>
         <ul class="list">
           <li class="list-item">
@@ -167,10 +172,7 @@
     </main>
     <!--підвал-->
     <footer class="footer">
-      <a class="logo" href="./index.html">
-        <span class="logo-first-word">Web</span>
-        Studio
-      </a>
+      <a class="logo" href="./index.html"> <span class="logo-first-word">Web</span>Studio </a>
       <address class="contacts-adress" id="contacts">
         <ul class="list">
           <li class="list-item">
