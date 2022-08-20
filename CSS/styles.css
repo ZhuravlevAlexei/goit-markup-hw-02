@@ -8,10 +8,11 @@
   --main-txt-color: #757575;
   --main-accent-color: #2196f3;
   --light-txt-color: #ffffff;
+  --light-footer-links-cl: rgba(255, 255, 255, 0.6);
 
   /* Background */
   background-color: #ffffff;
-  --background-secodary-cl: #2f303a;
+  --background-secondary-cl: #2f303a;
   --background-elements: #f5f4fa;
   /* Other */
 }
@@ -28,7 +29,6 @@ body {
 /* reset */
 .link {
   text-decoration: none;
-  color: currentColor;
 }
 
 .list {
@@ -42,7 +42,6 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: calc(31 / 26);
-  /* letter-spacing: 0.03em; */
   color: var(--main-headers-color);
   text-decoration: none;
 }
@@ -55,6 +54,7 @@ body {
   font-weight: 500;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
+  color: var(--main-headers-color);
 }
 
 /* + лого */
@@ -66,13 +66,13 @@ body {
 }
 
 /* поточна сторінка */
-.current {
+.header .current {
   color: var(--main-accent-color);
 }
 
 /* герой */
 .hero {
-  background-color: var(--background-secodary-cl);
+  background-color: var(--background-secondary-cl);
 }
 
 .hero-title {
@@ -94,32 +94,28 @@ body {
   line-height: calc(30 / 16);
   letter-spacing: 0.06em;
 
-  /* color: var(--light-txt-color);  */
-  background-color: var(--background-elements);
+  color: var(--light-txt-color);
+  background-color: var(--main-accent-color);
 
   cursor: pointer;
 }
 
 .btn:hover,
 .btn:focus {
-  background-color: var(--main-accent-color);
-  color: var(--light-txt-color);
+  background-color: var(--background-elements);
+  color: var(--main-headers-color);
 }
 
 /* секція особливостей */
-.section-special .section-title {
-  font-weight: 700;
+.special-title {
   font-size: 14px;
   line-height: calc(16 / 14);
-  /* letter-spacing: 0.03em; */
   text-transform: uppercase;
   color: var(--main-headers-color);
 }
 
 /* чим займаємось, команда - заголовки */
-.section-team .section-title,
-.section-what .section-title {
-  font-weight: 700;
+.section-title {
   font-size: 36px;
   line-height: calc(42 / 36);
   text-align: center;
@@ -134,7 +130,6 @@ body {
   line-height: calc(19 / 16);
 
   text-align: center;
-  /* letter-spacing: 0.03em; */
   color: var(--main-headers-color);
 }
 
@@ -142,21 +137,25 @@ body {
   font-size: 16px;
   line-height: calc(19 / 16);
   text-align: center;
-  letter-spacing: 0.03em;
 }
 
 /* footer */
 .footer {
-  background-color: var(--background-secodary-cl);
-  color: var(--light-txt-color);
+  background-color: var(--background-secondary-cl);
 }
 
 .contacts-adress {
   font-style: normal;
 }
 
-.footer .logo {
+.footer .logo,
+.link-map {
   color: var(--light-txt-color);
+  text-decoration: none;
+}
+
+.footer .link {
+  color: var(--light-footer-links-cl);
 }
 
 .footer .logo:hover,
@@ -179,6 +178,7 @@ body {
   line-height: calc(26 / 16);
 
   background-color: var(--background-elements);
+  color: var(--main-headers-color);
 
   border-radius: 4px;
   border-top: none;
@@ -194,14 +194,14 @@ body {
   color: var(--light-txt-color);
 }
 
-.list-progects {
-  list-style: none;
+/* поточна кнопка */
+.currentrbtn {
+  background-color: var(--main-accent-color);
+  color: var(--light-txt-color);
 }
 
-.list-progects .list-item {
-  font-size: 16px;
-  /* line-height: 30px; */
-  line-height: calc(30 / 16);
+.list-progects {
+  list-style: none;
 }
 
 .project-name {
@@ -211,4 +211,9 @@ body {
 
   text-align: left;
   color: var(--main-headers-color);
+}
+
+.project-text {
+  font-size: 16px;
+  line-height: calc(30 / 16);
 }
