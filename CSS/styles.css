@@ -27,7 +27,8 @@ body {
 }
 
 /* reset */
-.link {
+.link,
+.lh-txt-cl {
   text-decoration: none;
 }
 
@@ -57,7 +58,16 @@ body {
   color: var(--main-headers-color);
 }
 
+.lh-txt-cl {
+  font-weight: 500;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  color: var(--main-txt-color);
+}
+
 /* + лого */
+.lh-txt-cl:hover,
+.lh-txt-cl:focus,
 .header .link:hover,
 .header .link:focus,
 .logo:hover,
