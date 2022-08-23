@@ -28,7 +28,7 @@ body {
 
 /* reset */
 .link,
-.lh-txt-cl {
+.link-h-act-cont {
   text-decoration: none;
 }
 
@@ -51,23 +51,24 @@ body {
   color: var(--main-accent-color);
 }
 
-.header .link {
+.header .link,
+.link-h-act-cont {
   font-weight: 500;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
+}
+
+.header .link {
   color: var(--main-headers-color);
 }
 
-.lh-txt-cl {
-  font-weight: 500;
-  line-height: calc(16 / 14);
-  letter-spacing: 0.02em;
+.link-h-act-cont {
   color: var(--main-txt-color);
 }
 
 /* + лого */
-.lh-txt-cl:hover,
-.lh-txt-cl:focus,
+.link-h-act-cont:hover,
+.link-h-act-cont:focus,
 .header .link:hover,
 .header .link:focus,
 .logo:hover,
